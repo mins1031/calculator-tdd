@@ -1,17 +1,12 @@
 package calculator;
 
 public class Calculator {
-    private static final int ZERO = 0;
-    private int currentValue = 0;
 
-    public Calculator() {
+    public int plus(int firstValue, int secondValue) {
+        return firstValue + secondValue;
     }
 
-    public Calculator(int currentValue) {
-        this.currentValue = currentValue;
-    }
-
-    public int plus(int plusValue) {
-        return currentValue + plusValue;
+    public int minus(int firstValue, int secondValue) {
+        return firstValue - secondValue;
     }
 }

@@ -8,8 +8,12 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-//        while (true) {
-//            InputParserscanner.nextLine();
-//        }
+        while (true) {
+            String input = scanner.nextLine();
+            if (input == null) {
+                break;
+            }
+            InputParser.inputCommand(input);
+        }
     }
 }

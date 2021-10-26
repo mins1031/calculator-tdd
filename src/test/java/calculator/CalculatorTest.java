@@ -11,8 +11,8 @@ class CalculatorTest {
         int currentVal = 120;
         int plusVal = 21;
         //when
-        Calculator calculator = new Calculator(currentVal);
-        int plus = calculator.plus(plusVal);
+        Calculator calculator = new Calculator();
+        int plus = calculator.plus(plusVal, currentVal);
         //then
         Assertions.assertThat(plus).isEqualTo(plusVal + currentVal);
     }

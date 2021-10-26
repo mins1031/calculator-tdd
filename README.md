@@ -10,7 +10,21 @@
 - AC(All Clear)버튼을 누르면 0으로 초기화 한다.
 - 숫자는 한번에 최대 3자리 수까지 입력 가능하다.
 - 계산 결과를 표현할 때 소수점 이하는 버림한다.
+ 
+계산식 입력 -> split나눔 -> 2씩증가하는 반복문으로 계산 -> 리턴
 
+- 사용자가 입력한 계산식 문자열을 알맞게 파악해야한다. 입력후 엔터키를 누르면 메서드 동작
+-> 문자열을 split해 짝수자리는 숫자, 홀수 자리는 계산식이다 
+  - 문자열 파싱
+    - input : String calculus
+    - output : int result
+  - 인풋 메서드
+    - input : 
+    - output : String input
+  - 덧셈
+    - input : int plusNum
+    - output : int result
+    
 # 위 요구 사항들에 대한 TDD 적용
 - 값을 유지하는 필드
 - 덧셈은 현재 값 필드 + 입력받은 수
